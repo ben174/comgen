@@ -50,13 +50,13 @@ class ComGen:
     def generate_has(self):
         a = 'a ' if not self.plural else ''
         return (
-            'has {}{} {} {}'.format(a, self.modifier, self.adjective, self.noun),
+            'has {}{} {} {}.'.format(a, self.modifier, self.adjective, self.noun),
             (self.adjective, self.noun)
         )
 
     def generate_is(self):
         return (
-            'is {} {} {}'.format(self.modifier, self.goodat, self.talent),
+            'is {} {} {}.'.format(self.modifier, self.goodat, self.talent),
             (self.goodat, self.talent),
         )
 
