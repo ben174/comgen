@@ -1,0 +1,4 @@
+mind|0
+hands|1
+toes|1
+arms|1
