@@ -14,6 +14,9 @@ class ImgGrab:
             api_key=FLICKR_KEY,
         )
         response = requests.get(url).json()
+        if not response['photos']['photo']:
+            # no results :(
+            return None
         return self.get_url(response['photos']['photo'][0])
 
     def get_signature(self, args):
